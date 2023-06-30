@@ -1,0 +1,320 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    font-family: fantasy;
+    background-color: black;
+}
+
+body{
+  margin: auto 0px;
+}
+
+
+a{
+    margin: 20px;
+    color: aliceblue;
+    text-decoration: none;
+
+    
+}
+header{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto 0px;
+
+
+}
+
+.main-nav{
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  height: 10vh;
+}
+
+
+li{
+  padding: 20px;
+
+}
+
+.input-group {
+    margin-left:auto;
+    width: 400px;
+}
+.nav_bar{
+    
+    font-size: 40px;
+    color:rgb(238, 232, 232);
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+
+@media only screen and (max-width:100px){
+  .main-nav{
+    font-size: 20px;
+    padding:0px;
+  }
+}
+
+.middle{
+  text-align: center;
+  font-size: 40px;
+  color: aliceblue;
+  -webkit-text-stroke: 2px rgba(13, 163, 223, 0.836);
+  padding: 120px;
+  background-image: url(https://wallpapers.com/images/hd/honkai-impact-haxxor-bunny-87z71aqag4pidx4i.jpg);
+  height: 310px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.5
+}
+
+.name{
+  opacity:1;
+}
+/*GRID*/
+.above {
+  background-color: rgba(37, 37, 37, 0.199);
+  display: grid;
+  place-items: center;
+  grid-gap: 100px;
+  margin: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  border: 2px solid rgba(41, 35, 35, 0.767);
+  padding: 50px;
+}
+
+/*make sure that the website looks consistent from all orientations*/
+@media (orientation: portrait) {
+  .above {
+    grid-template-rows: repeat(2,1fr);
+  }
+}
+
+@media (orientation: landscape) {
+  .above {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+}
+
+
+hr{
+    border-color:rgb(218, 179, 10);
+    border-width: 2px;
+    
+}
+.dropdown-menu{
+    height:150px;
+}
+.dropdown-item{
+    height: 35px;
+    width: 150px;
+    padding: 10px;
+    border-bottom:  2px solid rgb(28, 157, 189) ;
+    color:rgba(214, 156, 48, 0.836);
+
+}
+
+
+
+.section_1 {
+    text-align: center;
+    font-weight: bold;
+    font-variant: uppercase;
+    font-size: 30px;
+    padding: 80px;
+    margin:80px;
+    color: rgb(238, 232, 232);
+    background-image: url(https://upload-os-bbs.hoyolab.com/upload/2021/07/24/128659028/9f048e92f9b8488400611e7553a00bc9_78360623066829589.png);
+    /*opacity: 0.65;*/
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgba(41, 35, 35, 0.767);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(26, 170, 62, 0.836);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section_1 .p_text {
+    display: none;
+  }
+  
+  .section_1:hover .p_text {
+    display: block;
+    -webkit-text-stroke: 2px rgba(26, 170, 62, 0.836);
+  }
+  
+  .section_1:hover {
+    background-image: none;
+    
+  }
+  
+  .section_1:hover:before {
+    content: attr(title);
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+
+.section_2{
+    text-align: center ;
+    font-weight: bold;
+    font-variant: uppercase;
+    font-size: 30px;
+    padding: 80px;
+    border: 20px  ;
+    margin:80px;
+    color:rgb(238, 232, 232);
+    -webkit-text-stroke: 2px rgba(138, 39, 80, 0.945);
+    background-image: url(https://preview.redd.it/part-9-is-it-more-symbol-traces-yes-merry-christmas-v0-3f9rph31et7a1.png?width=3000&format=png&auto=webp&s=af6fdf5b092076f53b57a7b4357759da7ab6e4ed) ;
+    /*opacity:0.65;*/
+    background-position: center;
+    background-size: contain;
+    height:300px;
+    height:300px;
+    width: 300px;
+    border: 3px solid  rgba(41, 35, 35, 1);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(18, 211, 224, 0.925);
+}
+
+.section_2 .s_text {
+    display: none;
+  }
+  
+  .section_2:hover .s_text {
+    display: block;
+    -webkit-text-stroke: 2px rgba(18, 211, 224, 0.925);
+  }
+  
+  .section_2:hover {
+    background-image: none;
+    
+  }
+  
+  .section_2:hover:before {
+    content: attr(title);
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+.section_3{
+    text-align: center ;
+    font-weight: bold;
+    font-size: 30px;
+    font-variant: uppercase;
+    padding: 80px;
+    margin:80px;
+    border: 20px;
+    color:rgb(238, 238, 238);
+    background-image: url(https://preview.redd.it/neuqepca0sc71.png?width=640&crop=smart&auto=webp&s=b8de81e38ba72b75cad03bba06e4498550ecd91e) ;
+    /*opacity:0.65;*/
+    background-position: center;
+    background-size: contain;
+    height:300px;
+    width: 300px;
+    border: 3px solid  rgba(41, 35, 35, 0.767);    
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(13, 163, 223, 0.836);
+}
+
+.section_3 .g_text {
+    display: none;
+  }
+  
+  .section_3:hover .g_text {
+    display: block;
+    -webkit-text-stroke: 2px rgba(13, 163, 223, 0.836);
+  }
+  
+  .section_3:hover {
+    background-image: none;
+    
+  }
+  
+  .section_3:hover:before {
+    content: attr(title);
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+.section_4{
+    text-align: center ;
+    font-weight: bold;
+    font-variant: uppercase;
+    font-size: 30px;
+    padding: 80px;
+    border: 20px  ;
+    margin:80px;
+    color:rgb(238, 232, 232);
+    -webkit-text-stroke: 2px #B76E79;
+    background-image: url(https://preview.redd.it/part-9-is-it-more-symbol-traces-yes-merry-christmas-v0-44y7mcwhet7a1.png?width=3000&format=png&auto=webp&s=880c222c3a55b01361c07068e6883e5763a28f32);
+    background-position: center;
+    background-size: contain;
+    height:300px;
+    width: 300px;
+    /*opacity: 0.65;*/
+    border: 3px solid  rgba(41, 35, 35, 0.767);
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(218, 179, 10, 0.788);
+}
+
+.section_4 .m_text {
+    display: none;
+  }
+  
+  .section_4:hover .m_text {
+    display: block;
+    -webkit-text-stroke: 2px rgba(218, 179, 10, 0.788);
+  }
+  
+  .section_4:hover {
+    background-image: none;
+    
+  }
+  
+  .section_4:hover:before {
+    content: attr(title);
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+
+footer{
+    margin: auto 20px 10px 20px;
+
+    
+}
+.under{
+    height: 50px;
+
+    margin-top: 40px;
+    border: 2px solid rgb(238, 232, 232);
+    border-radius: 10px;
+    margin: 10px 20px 10px 20px;
+    
+}
+
+
